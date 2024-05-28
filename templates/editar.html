@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block content %}
+ 
+ <section class="main" >
+            
+    <section class="articles">
+            <article>
+                <h1>
+                    <CENTER> <b> ¡Contactanos! </b> </CENTER>
+                      
+                </h1>
+                   <br>
+                   <br>
+                   <br>
+                   <form action="/editar_comenta/{{comentar.0}}" method="post">
+                    <div class="container">
+                           <div class="form-row">
+                                <div class="col-xs-12 ">
+                                 <div class="mb-3">
+                                       <label for="correo" class="form-label">Escribe aqui tu correo electronico</label>
+                                       <input type="text" class="form-control" name="correo" id="correo" placeholder="nombre@ejemplo.com" value="{{comentar.1}}">
+                                 </div>
+                                 <div class="mb-3">
+                                       <label for="comentarios" class="form-label">Escribe tu mensaje</label>
+                                       <input type="text" class="form-control" name="comentarios" id="comentarios" value="{{comentar.2}}"></input>
+                                 </div>
+                                 </div>
+                           </div>
+                     </div>
+                           <button type="submit" class="btn btn-primary">Actualizar</button>
+                 </form>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <center> <img src="/static/Multimedia/pr1.png"  width="300" height="150"></center>
+        </article>
+            
+    </section>  
+    </section> 
+    <aside>
+    <center> <h3> Horarios</h3></center>
+        <p>     <CENTER> Lunes - Viernes: 9 am - 7pm
+            <br>
+            <br>
+            Sabado - Domingo: 9 am -2pm</CENTER>
+
+            <br>
+            <br>
+        <CENTER> <b>EMERGENCIAS</b></CENTER>
+        <BR>
+            <CENTER>En caso de una emergencia medica comuniarse al:<br></center>
+        <center> <b>440 345 345</bb></center>
+        
+        </p>
+        <center> <img src="/static/Multimedia/c1.png"  width="250" ></center>
+        
+    </aside>
+    <br>
+    <br> 
+
+{% endblock %}

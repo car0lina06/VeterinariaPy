@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="keywords" content="HTML5, CSS3">
+<title>Veterinaria</title>
+<link rel="stylesheet" href="/static/estilos.css">
+</head>
+<body>
+<header>
+    <div  id="t">      
+        <center><h2>Peet Meet</h2></center> 
+        <center><h5>Veterinaria Y Centro de adopcion</h5></center>
+    </div>
+    
+    <div id="imi"><img src="/static/Multimedia/h.png" width="200px"></div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="/index">Inicio</a></li>
+                <li><a href="/Perritos">Perros</a></li>
+                <li><a href="/Gatito">Gatos </a></li>
+                <li><a href="/conejito">Conejos</a></li>
+                <li><a href="/comenta">¡Tu opinion!</a></li>
+                <li><a href="/crud"> opiniones</a></li>
+            </ul>
+        </nav>
+        
+    {% block content %}
+    {% endblock %}
+    
+    <footer>
+        <p> <center> Med. Vet. Zoot. Maria Sofia Ruiz 449 201 6907</center></p>
+    </footer>
+    
+</body>
+</html>
